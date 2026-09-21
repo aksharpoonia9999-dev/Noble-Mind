@@ -424,7 +424,7 @@ footer.innerHTML = `
               ${section.links
                 .map(
                   (link) => `
-                    <li class="group relative w-fit text-white/80 font-normal text-base leading-[150%] cursor-pointer before:absolute before:left-0 before:bottom-[-2px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] after:absolute after:right-0 after:bottom-[-2px] after:h-[1px] after:w-0 after:bg-main-gradient after:transition-all after:duration-300 after:content-[''] hover:before:w-1/2 hover:after:w-1/2">
+                    <li class="group relative w-fit text-white/80 font-normal text-base leading-[150%] cursor-pointer before:absolute before:left-0 before:bottom-[-2px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] hover:before:w-full">
                       <a href="#" class=" block">
                         ${link}
                       </a>
