@@ -1,10 +1,6 @@
-
 // HEADER / NAVIGATION
 
-
 const NAV_DATA = ["Home", "About Us", "Solutions", "Resources"];
-
-//
 
 const navList = document.getElementById("navList");
 
@@ -18,6 +14,8 @@ navList.innerHTML = NAV_DATA.map((item) => {
 
 function openMenu() {
   navList.classList.toggle("max-lg:right-0!");
+
+  document.documentElement.classList.toggle("overflow-hidden");
   document.body.classList.toggle("overflow-hidden");
 
   const line1 = document.getElementById("line1");
@@ -33,9 +31,21 @@ function openMenu() {
   line3.classList.toggle("-translate-y-2");
 }
 
+document.addEventListener("click", (event) => {
+  const menuButton = document.getElementById("menuButton");
+
+  const isMenuOpen = navList.classList.contains("max-lg:right-0!");
+
+  if (
+    isMenuOpen &&
+    !navList.contains(event.target) &&
+    !menuButton.contains(event.target)
+  ) {
+    openMenu();
+  }
+});
 
 // VISION / CONTENT
-
 
 const CONTENT_DATA = [
   "The future of how we live, work, and learn. We see a world where technology is not just a tool but a transformative force for good, reshaping every aspect of human existence.",
@@ -52,6 +62,8 @@ const contentList = document.getElementById("contentList");
 contentList.innerHTML = CONTENT_DATA.map((item, index) => {
   return `
     <div 
+    data-aos="zoom-out-down"
+      data-aos-delay="${index * 250}"
       class="flex gap-[10px] items-start border border-[#CFA7FF] rounded-16 px-3 py-3">
 
       <span>
@@ -80,9 +92,7 @@ contentList.innerHTML = CONTENT_DATA.map((item, index) => {
   `;
 }).join("");
 
-
 // SERVICES / INDUSTRIES
-
 
 const INDUSTRY_DATA = [
   {
@@ -265,6 +275,8 @@ const industryList = document.getElementById("industryList");
 industryList.innerHTML = INDUSTRY_DATA.map((item, index) => {
   return `
     <div
+    data-aos="zoom-in-right"
+      data-aos-delay="${index * 200}"
       class="
         group
         cursor-pointer
@@ -293,9 +305,7 @@ industryList.innerHTML = INDUSTRY_DATA.map((item, index) => {
   `;
 }).join("");
 
-
 // WHY CHOOSE US / VALUES
-
 
 const VALUES_DATA = [
   {
@@ -345,6 +355,8 @@ const valuesList = document.getElementById("valuesList");
 valuesList.innerHTML = VALUES_DATA.map((item, index) => {
   return `
         <div 
+        data-aos="fade-down-right"
+      data-aos-delay="${index * 150}"
             class="
                 group
                 rounded-16
@@ -391,9 +403,7 @@ valuesList.innerHTML = VALUES_DATA.map((item, index) => {
     `;
 }).join("");
 
-
 // FOOTER
-
 
 const footerData = [
   {
@@ -442,9 +452,7 @@ footer.innerHTML = `
 
   `;
 
-
 // Year function
-
 
 const yearElement = document.getElementById("year");
 

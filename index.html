@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,14 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        /* Spacing */
-
-        --spacing-10: 10px;
-        --spacing-28: 28px;
-
         /* Border Radius */
 
         --radius-1: 1.66px;
@@ -83,7 +79,7 @@
     </style>
   </head>
 
-  <body class="font-jakrata-display">
+  <body class="font-jakrata-display overflow-x-hidden">
     <header class="bg-custom-white px-4 py-[17px]">
       <nav
         class="max-w-[1140px] w-full flex items-center justify-between mx-auto"
@@ -151,16 +147,20 @@
         class="max-w-[1140px] w-full mx-auto flex flex-col items-center justify-center"
       >
         <div
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
           class="max-w-[948px] w-full flex flex-col items-center justify-center text-center gap-3 sm:gap-[14px] md:gap-4"
         >
-          <h1
-            class="font-bold text-[38px] sm:text-[48px] md:text-[56px] lg:text-[64px] leading-110 text-black"
-          >
-            Elevate Your Solutions with
-            <span class="bg-main-gradient bg-clip-text text-transparent"
-              >Noble Mind IT</span
+          <div>
+            <h1
+              class="font-bold text-[38px] sm:text-[48px] md:text-[56px] lg:text-[64px] leading-110 text-black"
             >
-          </h1>
+              Elevate Your Solutions with
+              <span class="bg-main-gradient bg-clip-text text-transparent"
+                >Noble Mind IT</span
+              >
+            </h1>
+          </div>
           <p
             class="max-w-[900px] w-full font-normal text-sm sm:text-base leading-150 text-text-primary"
           >
@@ -225,6 +225,8 @@
         </div>
         <div class="max-w-[536px] w-full flex flex-col justify-center">
           <h1
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
             class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-110 text-black mb-3 sm:mb-[14px] md:mb-4"
           >
             Our
@@ -233,6 +235,8 @@
             >
           </h1>
           <p
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
             class="font-normal text-sm sm:text-base leading-150 text-text-secondary"
           >
             In our commitment to excellence, we create value across these
@@ -265,7 +269,11 @@
       <div
         class="max-w-[1140.12px] w-full mx-auto flex min-[1100px]:flex-row flex-col items-center justify-center gap-[30px] sm:gap-[36px] md:gap-[48px] lg:gap-[62px]"
       >
-        <div class="max-w-[462px] flex flex-col justify-center">
+        <div
+          class="max-w-[462px] flex flex-col justify-center"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        >
           <h1
             class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-130 text-black"
           >
@@ -406,6 +414,8 @@
         class="max-w-[1140px] w-full mx-auto flex flex-col items-center justify-center"
       >
         <h1
+          data-aos="fade-in"
+          data-aos-duration="1000"
           class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-110 text-black"
         >
           Our
@@ -533,24 +543,28 @@
         <div
           class="w-full flex xl:flex-row flex-col gap-[32px] xl:gap-[110px] max-xl:text-center max-xl:items-center"
         >
-          <h1
-            class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-110 text-black"
-          >
-            Why
-            <span class="bg-main-gradient bg-clip-text text-transparent"
-              >Choose</span
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <h1
+              class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-110 text-black"
             >
-            Us
-          </h1>
-          <p
-            class="max-w-[666px] font-normal text-sm sm:text-base leading-150 text-text-body"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            id nisi euismod, porttitor quam sit amet, efficitur lectus. Mauris
-            eget pulvinar ante. Fusce posuere, mi in pretium consequat, sem
-            augue eleifend lorem, ut blandit libero neque vitae ex. Aenean
-            interdum a arcu aliquam imperdiet.
-          </p>
+              Why
+              <span class="bg-main-gradient bg-clip-text text-transparent"
+                >Choose</span
+              >
+              Us
+            </h1>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <p
+              class="max-w-[666px] font-normal text-sm sm:text-base leading-150 text-text-body"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse id nisi euismod, porttitor quam sit amet, efficitur
+              lectus. Mauris eget pulvinar ante. Fusce posuere, mi in pretium
+              consequat, sem augue eleifend lorem, ut blandit libero neque vitae
+              ex. Aenean interdum a arcu aliquam imperdiet.
+            </p>
+          </div>
         </div>
 
         <div class="w-full">
@@ -564,6 +578,8 @@
         </div>
 
         <div
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
           id="valuesList"
           class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full"
         ></div>
@@ -685,7 +701,11 @@
       <div
         class="max-w-[1140px] w-full mx-auto flex lg:flex-row flex-col max-lg:gap-10 justify-between items-center"
       >
-        <div class="max-w-[458px] w-full max-lg max-lg:text-center">
+        <div
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+          class="max-w-[458px] w-full max-lg max-lg:text-center"
+        >
           <h1 class="font-bold lg:text-5xl md:text-4xl text-3xl leading-110">
             Join 4,000+ Companies
             <span class="text-text-purple">Already Growing </span>
@@ -694,7 +714,11 @@
         <div
           class="flex flex-col md:max-w-[550.22px] max-w-[380px] w-full md:gap-[47.74px] gap-[25px] max-sm:items-center"
         >
-          <div class="flex flex-row gap-[52px]">
+          <div
+            class="flex flex-row gap-[52px]"
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+          >
             <img
               class="max-md:w-27 max-md:h-9 max-sm:w-25 max-sm:h-8"
               src="assets/images/webp/layer.webp"
@@ -710,7 +734,11 @@
               alt="catalog"
             />
           </div>
-          <div class="flex flex-row gap-[52px] justify-end">
+          <div
+            class="flex flex-row gap-[52px] justify-end"
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+          >
             <img
               class="max-md:w-34 max-md:h-9 max-sm:w-32 max-sm:h-8"
               src="assets/images/webp/quotient.webp"
@@ -726,7 +754,11 @@
               alt="circoole"
             />
           </div>
-          <div class="flex flex-row gap-[62px]">
+          <div
+            class="flex flex-row gap-[62px]"
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+          >
             <img
               class="max-md:w-30 max-md:h-9 max-sm:w-28 max-sm:h-8"
               src="assets/images/webp/sisyphus.webp"
@@ -756,32 +788,38 @@
           class="max-w-[792px] flex flex-col items-center justify-center text-center"
         >
           <h1
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
             class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-110 text-white mb-4"
           >
             So, what you’ve been waiting for?
           </h1>
           <p
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
             class="font-normal text-sm sm:text-base leading-150 text-text-light-purple"
           >
             Ipsum integer faucibus eu morbi integer. Tempus in volutpat libero
             mauris neque dolor pellentesque sagittis. Scelerisque tempor auctor
             euismod rhoncus non elit molestie sed. Orci quam at varius eget.
           </p>
-          <button
-            class="group relative overflow-hidden py-[8px] sm:py-[11px] md:py-[13px] lg:py-[15px] px-[24px] sm:px-[34px] md:px-[37px] lg:px-[40.5px] border border-transparent rounded-61 bg-custom-white font-bold text-base leading-150 mt-[32px] sm:mt-[38px] md:mt-[42px] shadow-button transition-all duration-300 hover:bg-main-gradient hover:shadow-button-hover cursor-pointer"
-          >
-            <span
-              class="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            ></span>
-            <span
-              class="absolute -left-full top-0 h-full w-1/2 skew-x-[-20deg] bg-white/40 blur-sm transition-all duration-700 group-hover:left-[120%]"
-            ></span>
-            <span
-              class="relative z-10 bg-main-gradient bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+          <div>
+            <button
+              class="group relative overflow-hidden py-[8px] sm:py-[11px] md:py-[13px] lg:py-[15px] px-[24px] sm:px-[34px] md:px-[37px] lg:px-[40.5px] border border-transparent rounded-61 bg-custom-white font-bold text-base leading-150 mt-[32px] sm:mt-[38px] md:mt-[42px] shadow-button transition-all duration-300 hover:bg-main-gradient hover:shadow-button-hover cursor-pointer"
             >
-              Get Started
-            </span>
-          </button>
+              <span
+                class="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></span>
+              <span
+                class="absolute -left-full top-0 h-full w-1/2 skew-x-[-20deg] bg-white/40 blur-sm transition-all duration-700 group-hover:left-[120%]"
+              ></span>
+              <span
+                class="relative z-10 bg-main-gradient bg-clip-text text-transparent transition-all duration-300 group-hover:bg-none group-hover:text-white"
+              >
+                Get Started
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -792,7 +830,11 @@
       <div
         class="max-w-[1140px] mx-auto flex lg:flex-row flex-col max-lg:gap-10 max-sm:gap-8 w-full justify-between"
       >
-        <div class="max-w-[385px] w-full">
+        <div
+          data-aos="zoom-out-right"
+          data-aos-duration="1000"
+          class="max-w-[385px] w-full"
+        >
           <a href="">
             <img
               class="md:w-[271.45px] md:h-[46.18px] w-[200px]"
@@ -809,7 +851,11 @@
             transformational impact of AI and automation with Algominds.
           </p>
 
-          <div class="flex flex-row gap-3 mt-[24.81px]">
+          <div
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            class="flex flex-row gap-3 mt-[24.81px]"
+          >
             <div
               class="bg-dark-gray w-8 h-8 rounded-16 flex justify-center items-center hover:-translate-y-1 cursor-pointer duration-300 transition-all"
             >
@@ -909,14 +955,24 @@
         <div
           class="flex min-[585px]:flex-row max-[585px]:gap-5 flex-col lg:max-w-[707px] max-w-[600px] w-full justify-between"
         >
-          <div id="footer"></div>
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            id="footer"
+          ></div>
           <div>
-            <h3 class="font-bold max-w-max text-base leading-150 text-white">
+            <h3
+              data-aos-duration="1000"
+              data-aos="zoom-in-left"
+              class="font-bold max-w-max text-base leading-150 text-white"
+            >
               Contact Info
             </h3>
             <a
+              data-aos="zoom-in-left"
+              data-aos-duration="1000"
               href="tel:+0000000000"
-              class="group relative flex w-fit flex-row items-center gap-4 mt-2 cursor-pointer transition-all duration-500 before:absolute before:left-0 before:bottom-[-3px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
+              class="group relative flex w-fit flex-row items-center gap-4 mt-3 cursor-pointer transition-all duration-500 before:absolute before:left-0 before:bottom-[-3px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               <span>
                 <svg
@@ -950,6 +1006,8 @@
               </h2>
             </a>
             <a
+              data-aos="zoom-in-left"
+              data-aos-duration="1000"
               href="mailto:info@noblemindit.gmail.com"
               class="group relative flex w-fit flex-row items-center gap-4 mt-2 cursor-pointer transition-all duration-500 before:absolute before:left-0 before:bottom-[-3px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
@@ -994,6 +1052,10 @@
         © Noble Mind IT <span id="year"></span>. All Rights Reserved.
       </h2>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
