@@ -169,7 +169,11 @@
             trusted partner to elevate your IT infrastructure is paramount.
           </p>
         </div>
-        <div class="max-w-[1139px] relative z-10">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="max-w-[1139px] relative z-10"
+        >
           <img
             class="max-w-[1139px] w-full mt-[38px] sm:mt-[48px] md:mt-[58px] lg:mt-[67.2px] z-10"
             src="assets/images/webp/habibi.webp"
@@ -214,7 +218,7 @@
       <div
         class="max-w-[1140px] w-full mx-auto flex min-[1100px]:flex-row flex-col items-center justify-center gap-[30px] sm:gap-[36px] md:gap-[42px]"
       >
-        <div>
+        <div data-aos="zoom-in-right" data-aos-duration="1000">
           <img
             class="max-w-[562px] w-full"
             src="assets/images/webp/mission.webp"
@@ -223,10 +227,12 @@
             alt="mission"
           />
         </div>
-        <div class="max-w-[536px] w-full flex flex-col justify-center">
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+          class="max-w-[536px] w-full flex flex-col justify-center"
+        >
           <h1
-            data-aos="zoom-in-left"
-            data-aos-duration="1000"
             class="font-bold text-[32px] sm:text-[34px] md:text-[38px] lg:text-5xl leading-110 text-black mb-3 sm:mb-[14px] md:mb-4"
           >
             Our
@@ -235,8 +241,6 @@
             >
           </h1>
           <p
-            data-aos="zoom-in-left"
-            data-aos-duration="1000"
             class="font-normal text-sm sm:text-base leading-150 text-text-secondary"
           >
             In our commitment to excellence, we create value across these
@@ -291,7 +295,7 @@
           </p>
           <div id="contentList" class="flex flex-col gap-3 w-full mt-6"></div>
         </div>
-        <div>
+        <div data-aos="zoom-in-left" data-aos-duration="1000">
           <img
             class="max-w-[615.12px] w-full"
             src="assets/images/webp/team.webp"
@@ -830,11 +834,7 @@
       <div
         class="max-w-[1140px] mx-auto flex lg:flex-row flex-col max-lg:gap-10 max-sm:gap-8 w-full justify-between"
       >
-        <div
-          data-aos="zoom-out-right"
-          data-aos-duration="1000"
-          class="max-w-[385px] w-full"
-        >
+        <div class="max-w-[385px] w-full">
           <a href="">
             <img
               class="md:w-[271.45px] md:h-[46.18px] w-[200px]"
@@ -851,11 +851,7 @@
             transformational impact of AI and automation with Algominds.
           </p>
 
-          <div
-            data-aos="zoom-out-up"
-            data-aos-duration="1000"
-            class="flex flex-row gap-3 mt-[24.81px]"
-          >
+          <div class="flex flex-row gap-3 mt-[24.81px]">
             <div
               class="bg-dark-gray w-8 h-8 rounded-16 flex justify-center items-center hover:-translate-y-1 cursor-pointer duration-300 transition-all"
             >
@@ -955,22 +951,12 @@
         <div
           class="flex min-[585px]:flex-row max-[585px]:gap-5 flex-col lg:max-w-[707px] max-w-[600px] w-full justify-between"
         >
-          <div
-            data-aos="zoom-in-right"
-            data-aos-duration="1000"
-            id="footer"
-          ></div>
+          <div id="footer"></div>
           <div>
-            <h3
-              data-aos-duration="1000"
-              data-aos="zoom-in-left"
-              class="font-bold max-w-max text-base leading-150 text-white"
-            >
+            <h3 class="font-bold max-w-max text-base leading-150 text-white">
               Contact Info
             </h3>
             <a
-              data-aos="zoom-in-left"
-              data-aos-duration="1000"
               href="tel:+0000000000"
               class="group relative flex w-fit flex-row items-center gap-4 mt-3 cursor-pointer transition-all duration-500 before:absolute before:left-0 before:bottom-[-3px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
@@ -1006,8 +992,6 @@
               </h2>
             </a>
             <a
-              data-aos="zoom-in-left"
-              data-aos-duration="1000"
               href="mailto:info@noblemindit.gmail.com"
               class="group relative flex w-fit flex-row items-center gap-4 mt-2 cursor-pointer transition-all duration-500 before:absolute before:left-0 before:bottom-[-3px] before:h-[1px] before:w-0 before:bg-main-gradient before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
@@ -1055,7 +1039,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>
